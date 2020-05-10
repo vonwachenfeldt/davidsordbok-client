@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "run": "now dev",
+        "deploy": "now --prod"
+    }
+}

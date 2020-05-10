@@ -1,0 +1,196 @@
+:root
+{
+    --main: rgb(255, 247, 218);
+    --mainMatch: rgb(133, 96, 16);
+    --contrastText: rgb(0, 0, 0);
+    --lightText: rgb(97, 97, 97);
+    --background: rgb(255, 211, 68);
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    animation: fadeIn 0.8s;
+}
+a
+{
+    color: rgb(46, 125, 139);
+}
+.header
+{
+    color: var(--contrastText);
+    font-size: 3rem;
+    padding: 1rem;
+    padding-bottom: 0rem;
+    text-align: center;
+    font-family: 'Source Sans Pro';
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    background-color: var(--main);
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.select
+{
+    font-size: 1rem;
+    margin-left: 2rem;
+    border-style: solid;
+    border-radius: 0.5rem;
+    background-color: var(--main);
+    color: var(--mainMatch);
+    font-family: 'Source Sans Pro';
+    outline: none;
+}
+#theme
+{
+    margin-left: 0.4rem;
+}
+.words
+{
+    list-style: none;
+    padding: 2rem;
+    padding-top: 0rem;
+}
+.word
+{
+    font-family: 'Source Sans Pro';
+    width: calc(100%-2rem);
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    background-color: var(--main);
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.word .title
+{
+    font-size: 1.7rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--contrastText);
+}
+.word .type
+{
+    font-style: italic;
+    text-transform: lowercase;
+    margin-left: 1rem;
+    color: var(--contrastText);
+}
+.word .definition
+{
+    font-weight: bold;
+    color: var(--lightText);
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+.word .example-sentence
+{
+    margin-top: 8px;
+    font-style: italic;
+    color: var(--contrastText);
+}
+
+.word .date
+{
+    font-weight: 100;
+    color: var(--contrastText);
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+.publishButton, .addButton
+{
+    font-family: 'Source Sans Pro';
+    font-size: 1.3rem;
+    width: calc(100%-2rem);
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--main);
+    margin-left: 2rem;
+    color: var(--mainMatch);
+}
+
+.publishButtonm:focus, .addButton:focus, .addButton::active
+{
+    outline: none;
+    color: var(--contrastText);
+}
+
+.addButton
+{
+    font-size: 1rem;
+    padding: 0;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.addButton:hover, .select:hover, .publishButton:hover
+{
+    background-color: var(--mainMatch);
+    color: var(--background);
+}
+
+@keyframes fadeIn
+{
+    0%{
+        margin: 2rem;
+        letter-spacing: 6px;
+    }
+
+    100%{
+        margin: 0rem;
+        letter-spacing: 0px;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+    .title
+    {
+        font-size: 1.5rem !important;
+    }
+    .definition
+    {
+        font-size: 1rem !important;
+    }
+    .word
+    {
+        font-size: 0.8rem;
+    }
+    .header
+    {
+        font-size: 1.5rem;
+    }
+    .words-container
+    {
+        margin-top: -0.85rem;
+    }
+    .addButton, .select
+    {
+        font-size: 0.6rem;
+        margin-top: 0.3rem;
+    }
+    .addButton, #selectTheme
+    {
+        margin-left: 0.6rem;
+    }
+    #selectOrder
+    {
+        margin-left: 2rem;
+    }
+}
+
+@media only screen and (max-width: 379px)
+{
+    .addButton
+    {
+        margin-left: 2rem;
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Davids ordbok</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body onload="getDate(); setTheme();">
+    <div class="container">
+        <h1 class="header">Lägg till nytt ord</h1>
+        <div class="words-container">
+            <ul class="words">
+                <li class="word">
+                    <div class="row">
+                        <span contentEditable class="title">Ord</span>
+                        <span contentEditable class="type">Ordklass</span>
+                    </div>
+                    <hr>
+                    <p contentEditable class="definition">Definition här.</p>
+                    <p contentEditable class="example-sentence">Exempelmening här.</p>
+                    <p id="dateHolder" class="date"></p>
+                    <a contentEditable class="read-more" href="" target="_blank">(Eventuell länk)</a>
+                </li>
+            </ul>
+            <button class="publishButton" onclick="publish()">Publicera ordet</button>
+        </div>
+    </div>
+</body>
+<script src="js/handlecommon.js"></script>
+
+</html>
