@@ -25,7 +25,7 @@ function theme(value) {
         document.documentElement.style.setProperty('--main', "rgb(" + "247" + "," + "205" + "," + "158" + ")");
         document.documentElement.style.setProperty('--mainMatch', "rgb(" + "158" + "," + "56" + "," + "12" + ")");
         document.documentElement.style.setProperty('--contrastText', "rgb(" + "0" + "," + "0" + "," + "0" + ")");
-        document.documentElement.style.setProperty('--lightText', "rgb(" + "97" + "," + "97" + "," + "97" + ")");
+        document.documentElement.style.setProperty('--lightText', "rgb(" + "181" + "," + "34" + "," + "34" + ")");
         document.documentElement.style.setProperty('--background', "rgb(" + "233" + "," + "111" + "," + "40" + ")");
         localStorage.setItem("prefTheme", "4");
     }

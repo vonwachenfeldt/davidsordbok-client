@@ -92,6 +92,7 @@ a
     margin-top: 8px;
     font-style: italic;
     color: var(--contrastText);
+    word-wrap: break-word;
 }
 
 .word .date
