@@ -20,7 +20,7 @@ const addWord = data => {
             <p class="definition">${data.definition}</p>
             <p class="example-sentence">${data.exampleSentence || ""}</p>
             <p class="date">${new Date(data.createdAt).toISOString().slice(0,10)}</p>
-            ${data.readMore ? `<a class="read-more" href="${data.readMore}" target="_blank">Läs mer</a>` : ""}
+            ${data.readMore ? `<a class="read-more" href="${data.readMore.replace(/"/g, '&quot;')}" target="_blank">Läs mer</a>` : ""}
         </li>`
 
     document.querySelector(".words").innerHTML += html;
