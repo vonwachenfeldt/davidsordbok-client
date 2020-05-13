@@ -24,14 +24,14 @@
             <ul class="words">
                 <li class="word">
                     <div class="row">
-                        <span contentEditable class="title">Ord</span>
-                        <span contentEditable class="type">Ordklass</span>
+                        <span contentEditable id="getTitle" class="title">Ord</span>
+                        <span contentEditable id="getType" class="type">Ordklass</span>
                     </div>
                     <hr>
-                    <p contentEditable class="definition">Definition här.</p>
-                    <p contentEditable class="example-sentence">Exempelmening här.</p>
-                    <p id="dateHolder" class="date"></p>
-                    <a contentEditable class="read-more" href="" target="_blank">(Eventuell länk)</a>
+                    <p contentEditable id="getDefinition" class="definition">Definition här.</p>
+                    <p contentEditable id="getExampleSentence" class="example-sentence">Exempelmening här.</p>
+                    <p id="dateHolder" id="getDate" class="date"></p>
+                    <a contentEditable id="getReadMore" class="read-more" href="" target="_blank">(Eventuell länk)</a>
                 </li>
             </ul>
             <button class="publishButton" onclick="publish()">Publicera ordet</button>

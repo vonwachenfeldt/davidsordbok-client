@@ -1,6 +1,6 @@
 const xhr = new XMLHttpRequest;
 
-xhr.open("GET", "https://davidsordbok.cloudno.de/api/v1/words", true);
+xhr.open("GET", "https://david.cloudno.de/ordbok/api/v1/words", true);
 xhr.addEventListener("load", event => {
     const data = JSON.parse(xhr.responseText).data;
     window.data = data;
