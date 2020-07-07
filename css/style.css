@@ -1,10 +1,10 @@
 :root
 {
-    --main: rgb(255, 247, 218);
-    --mainMatch: rgb(133, 96, 16);
+    --main: rgb(236, 251, 255);
+    --mainMatch: rgb(28, 118, 141);
     --contrastText: rgb(0, 0, 0);
     --lightText: rgb(97, 97, 97);
-    --background: rgb(255, 211, 68);
+    --background: rgb(139, 228, 255);
 }
 
 body
